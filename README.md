@@ -11,7 +11,7 @@ The icons belong to Capcom, which is why they are not shipped with the mod.
 - Nothing else: no network access, no other file is written, the game files are never modified.
 
 ## Build
-Requires [Go](https://go.dev/dl/) 1.22 or later.
+Requires the [Go](https://go.dev/dl/) compiler, version 1.24 or later (this is the version of the Go programming language used to build the program, not the version of the mod).
 
 ```
 go build -trimpath -ldflags "-s -w" -o BardN_Item_Card_Extraire_les_icones.exe .
@@ -38,4 +38,4 @@ Dependency: `github.com/klauspost/compress` (zstd), pinned in `go.sum`.
 
 Petit programme d'appoint pour le mod **BardN Item Card** de Dragon's Dogma 2. Il lit les icônes des objets dans **ta propre copie du jeu** (en lecture seule) et les écrit en PNG pour le mod. Les icônes appartiennent à Capcom : c'est pour ça qu'elles ne sont pas distribuées avec le mod.
 
-Aucun accès réseau, aucun autre fichier écrit, les fichiers du jeu ne sont jamais modifiés. Compilation : voir la section « Build » ci-dessus (Go 1.22 ou plus).
+Aucun accès réseau, aucun autre fichier écrit, les fichiers du jeu ne sont jamais modifiés. Compilation : voir la section « Build » ci-dessus. Il faut le compilateur Go en version 1.24 ou plus (c'est la version du langage de programmation Go, pas celle du mod).
